@@ -9,3 +9,4 @@ jobs:
       - uses: actions/checkout@master
       - run: cat ./bootstrap.sh
       - run: cat .Brewfile
+      - run: ./bootstrap.sh

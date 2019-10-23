@@ -9,6 +9,9 @@ fi
 
 cd "$DOTPATH" || exit 1
 
+# dotfiles
+echo "start copy dotfiles"
+
 for file in .??*; do
   [[ "$file" == ".git" ]] && continue
   [[ "$file" == ".gitignore" ]] && continue
@@ -17,7 +20,12 @@ for file in .??*; do
   ln -fvns "$DOTPATH/$file" "$HOME/$file"
 done
 
+echo "finish copy dotfiles"
+
 # bin
+echo "start copy bin"
+
 mkdir -p ~/bin
 find "$DOTPATH/bin/" -type f -executable -exec ln -fvns {} ~/bin/ \;
 
+echo "finish copy bin"

@@ -10,3 +10,6 @@ jobs:
     - name: Run bootstrap.sh 
       run: |
         ./bootstrap.sh
+    - name: hoge
+      run: |
+        echo "hogehoge"

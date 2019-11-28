@@ -145,3 +145,6 @@ alias dc='docker-compose'
 alias dcu='docker-compose up'
 alias dcd='docker-compose down'
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+export PATH="/usr/local/opt/bison/bin:$PATH"
+
+alias dartisan='docker-compose exec my php artisan'

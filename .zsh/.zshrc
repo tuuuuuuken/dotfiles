@@ -148,3 +148,5 @@ export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 export PATH="/usr/local/opt/bison/bin:$PATH"
 
 alias dartisan='docker-compose exec my php artisan'
+
+alias de='docker exec -it $(docker ps | peco | cut -d " " -f 1) /bin/bash'
